@@ -1,0 +1,18 @@
+server:
+  port: 8000
+
+
+# jdbc 연결
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://database-1.cb8738oxfvy6.ap-northeast-2.rds.amazonaws.com:3306/back-20220829
+    username: lee4339
+    password: 1q2w3e4r
+  thymeleaf: classpath.templates/
+  suffix: .html
+
+# mybatis 연결
+mybatis:
+  mapper-locations:
+    - /mappers/*.xml
